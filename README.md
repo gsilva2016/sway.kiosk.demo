@@ -11,7 +11,7 @@ Demo illustrating two independent displays for video playback as can be useful f
 4. Modify the resolution and refresh rates that you desire
 5. Save changes
 6. Execute: cp config ~/.config/sway/
-7. Open the file playback-video-2-indendent-displays.sh and modify to use your video player of choice. Currently this file expects Gstreamer to already be installed.
+7. Optional: playback-video-2-indendent-displays.sh expects Gstreamer to be installed already. If another video player like VLC is desired open playback-video-2-indendent-displays.sh and modify to use your video player of choice. 
 8. Reboot
 9. At the login prompt click your user name. In the bottom right hand corner click the icon which appears as gear and choose Sway from the drop down.
 10. Type your password in the login prompt to login
