@@ -5,7 +5,7 @@ Demo illustrating two independent displays for video playback as can be useful f
 
 **Ubuntu 20.04 LTS Installation Steps**
 
-1. sudo apt update && sudo install -y sway
+1. sudo apt update && sudo apt install -y sway
 2. Open the config file and scroll down to the text "output DP-1".  Currently this config file will support 2 displays side by side (horizontal from each other) using 1920x1080@60Hz on DP-1 and DP-2 interfaces/connectors. To find your connector names open a terminal and type: sudo cat /sys/kernel/debug/dri/0/i915_display_info and look "status: connected" which indicate available displays/connectors.
 3. Modify both names DP-1 and DP-2 to match your system 
 4. Modify the resolution and refresh rates that you desire
