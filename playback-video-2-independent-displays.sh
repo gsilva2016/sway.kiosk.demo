@@ -15,10 +15,10 @@ fi
 
 echo "Launching video on display 1"
 swaymsg workspace 1
-gst-play-1.0 $1 &
+gst-launch-1.0 filesrc location=$1 ! qtdemux ! vaapih264dec ! vaapisink fullscreen=1 &
 sleep 1
 
 echo "Launching video on display 2"
 swaymsg workspace 2
-gst-play-1.0 $2 
+gst-launch-1.0 filesrc location=$2 ! qtdemux ! vaapih264dec ! vaapisink fullscreen=1
 
