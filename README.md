@@ -25,6 +25,10 @@ If using GStreamer for the video playback
 3. export GST_VAAPI_ALL_DRIVERS=1 or add this permanently in the _~/.bashrc_ profile (append at end)
 4. Verify the command : gst-inspect-1.0 vaapi returns vaapih264dec and vaapih265dec
 
+**Verify Hardware Accelerated Decode during playback
+1. Install intel_gpu_top via sudo apt install intel-gpu-tools
+2. Run : sudo intel_gpu_top
+
 **Running the POC**
 1. Open a terminal using Windows Key + Enter on the keyboard
 2. Execute: ./playback-video-2-indendent-displays.sh myvideo1.mp4 myvideo2.mp4
