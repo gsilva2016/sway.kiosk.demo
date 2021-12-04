@@ -18,6 +18,13 @@ Demo illustrating two independent displays for video playback as can be useful f
 11. Type your password in the login prompt to login
 12. At this point you should see Sway on the Desktop
 
+**GStreamer Installation Help**
+If using GStreamer for the video playback 
+1. Install GStreamer 
+2. Install GStreamer VAAPI plugins: apt install gstreamer1.0-vaapi
+3. export GST_VAAPI_ALL_DRIVERS=1 or add this permanently in the _~/.bashrc_ profile (append at end)
+4. Verify the command : gst-inspect-1.0 vaapi returns vaapih264dec and vaapih265dec
+
 **Running the POC**
 1. Open a terminal using Windows Key + Enter on the keyboard
 2. Execute: ./playback-video-2-indendent-displays.sh myvideo1.mp4 myvideo2.mp4
