@@ -33,3 +33,4 @@ If using GStreamer for the video playback
 1. Open a terminal using Windows Key + Enter on the keyboard
 2. Execute: ./playback-video-2-indendent-displays.sh myvideo1.mp4 myvideo2.mp4
 3. Both videos will playback on their assigned workspaces e.g. displays.
+4. Note that the playback-video-2-independent-displays.sh is setup for H264 files only. 
