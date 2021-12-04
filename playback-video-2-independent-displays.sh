@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export GST_VAAPI_ALL_DRIVERS=1
+
 if [ x$1 == "x" ]
 then
 	echo "Missing video file name for argument 1"
