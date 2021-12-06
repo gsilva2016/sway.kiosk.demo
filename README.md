@@ -10,7 +10,7 @@ Demo illustrating two independent displays for video playback as can be useful f
 3. Modify both names DP-1 and DP-2 to match your system 
 4. Modify the resolution and refresh rates that you desire
 5. Save changes
-6. Execute: cp config ~/.config/sway/ 
+6. Execute: cp config ~/.config/sway/ (might not exist and is ok to skip if error occurs) 
 7. Execute: cp config /etc/sway
 8. Optional: playback-video-2-indendent-displays.sh expects Gstreamer to be installed already. If another video player like VLC is desired open playback-video-2-indendent-displays.sh and modify to use your video player of choice. 
 9. Reboot
@@ -23,7 +23,7 @@ Demo illustrating two independent displays for video playback as can be useful f
 If using GStreamer for the video playback 
 1. Install GStreamer 
 2. Install GStreamer VAAPI plugins: apt install gstreamer1.0-vaapi
-3. export GST_VAAPI_ALL_DRIVERS=1 or add this permanently in the _~/.bashrc_ profile (append at end)
+3. export GST_VAAPI_ALL_DRIVERS=1 or add this permanently in the _~/.bashrc_ profile (append at end). Note this step is optional if using playback-video-2-independent-displays.sh script.
 4. Verify the command : gst-inspect-1.0 vaapi returns vaapih264dec and vaapih265dec
 
 **Verify Hardware Accelerated Decode during playback**
