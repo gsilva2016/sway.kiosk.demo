@@ -20,6 +20,7 @@ Demo illustrating two independent displays for video playback as can be useful f
 
 
 **VLC Installation Help**
+If using VLC for the playback
 1. sudo apt install vlc
 
 **GStreamer Installation Help**
