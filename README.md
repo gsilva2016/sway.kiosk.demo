@@ -18,6 +18,10 @@ Demo illustrating two independent displays for video playback as can be useful f
 11. Type your password in the login prompt to login
 12. At this point you should see Sway on the Desktop
 
+
+**VLC Installation Help**
+1. sudo apt install vlc
+
 **GStreamer Installation Help**
 
 If using GStreamer for the video playback 
